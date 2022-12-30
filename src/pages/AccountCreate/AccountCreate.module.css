@@ -1,0 +1,67 @@
+.createaccount_container {
+  text-align: center;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../../resources/img/pc-bg-06.jpg);
+  background-size: cover;
+}
+
+.form_container h2 {
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+
+.form_container h2 span {
+  color: aliceblue;
+  padding: 1px 3px;
+  background-color: red;
+}
+
+.form_container form {
+  padding: 18px 15px;
+  margin: 5px auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(71, 71, 71);
+  padding: 0.8em 0em;
+  background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(24, 24, 24);
+}
+
+.form_container span {
+  color: rgb(0, 0, 0);
+  margin-left: 0;
+}
+
+.form_container p {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 15px;
+  transition: 200ms;
+}
+
+.rowData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  margin: auto;
+  color: #721c24;
+  max-width: 250px;
+  background-color: #ff3e4f;
+  border: 1px solid #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}

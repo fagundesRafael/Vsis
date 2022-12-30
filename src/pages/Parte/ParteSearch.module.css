@@ -1,0 +1,23 @@
+.search_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search_container h2 {
+    margin: 20px auto 5px;
+    color: #fff;
+}
+
+.search_container span {
+    background-color: red;
+    padding: 2px 4px;
+}
+
+.search_container h3 {
+    font-size: 15px;
+    margin: 5px 0 10px;
+    color: rgb(196, 196, 196);
+}

@@ -1,0 +1,129 @@
+.general_container {
+    text-align: center;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../../resources/img/pc-bg-01.jpg);
+    background-size: cover;
+}
+
+.top_container {
+    height: 60vh;
+    width: 60vw;
+    padding: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15% auto 2%;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top_container h1 {
+    padding: 0.2rem;
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.top_container span {
+    color: red;
+}
+
+.top_container p {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.top_container p > span {
+    padding: 0 .15rem;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: red;
+}
+
+.botton_container {
+    margin: 0 auto 20%;
+    height: 35vh;
+    width: 77vw;
+    padding: 7px 0px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.botton_container a {
+    min-width: 11rem;
+    padding: 10px 15px;
+    margin: .2rem .5rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5%;
+    text-decoration: none;
+    /* color: white; */
+}
+
+.botton_container a:hover {
+    /* border: 1px solid red; */
+    border: 1px solid white;
+    border-radius: 0%;
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+
+/* @media screen and (min-width: 1000px) {
+    .top_container {
+        height: 20vh;
+        width: 40vw;
+        color: white;
+        display: flex;
+        margin: 0 auto;
+    }
+  }
+  
+
+  @media screen and (min-width: 1000px) {
+    .botton_container {
+        height: 80vh;
+        width: 40vw;
+        color: white;
+        display: flex;
+        margin: 0 auto;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .top_container {
+        height: 20vh;
+        width: 60vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .top_container h1 {
+        padding: 0.2rem;
+        border-radius: 5%;
+        font-size: 1rem;
+    }
+    .top_container p {
+        font-size: 1rem;
+    }
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .botton_container {
+        height: 60vh;
+        width: 60vw;
+        color: white;
+        display: flex;
+        margin: 0 auto;
+    }
+  } */

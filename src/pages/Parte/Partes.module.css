@@ -1,0 +1,55 @@
+.main_container {
+    text-align: center;
+    min-height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../../resources/img/pc-bg-07.jpg);
+    background-size: cover;
+}
+
+
+.main_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.form_new {
+    max-width: 90%;
+}
+
+.form_new input {
+    margin: auto 20px;
+}
+
+.main_body h2 {
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.main_body span {
+    background-color: red;
+}
+
+.btn_query {
+    background-color: #1a8918;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 120px;
+    font-weight: bold;
+    border: none;
+    padding: 6px 6px;
+    font-size: .7em;
+    transition: 200ms;
+  }
+  .btn_query:hover {
+    transform: scale(1.05);
+    background-color: #0f730c;
+    color: #fff;
+  }

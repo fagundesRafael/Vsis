@@ -1,0 +1,19 @@
+sidebar
+https://www.youtube.com/watch?v=CXa0f4-dWi4
+################################################
+
+sidebar with dropdown
+https://www.youtube.com/watch?v=mN3P_rv8ad4
+################################################
+
+InputMask
+https://www.youtube.com/watch?v=hWukAkEzBB4
+################################################
+
+selects by API
+https://www.youtube.com/watch?v=M-ale9T2XrE&t=1083s
+################################################
+
+datas
+https://www.youtube.com/watch?v=S0DEjz7gQSQ
+################################################

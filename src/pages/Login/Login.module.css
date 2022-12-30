@@ -1,0 +1,75 @@
+.login_container {
+  text-align: center;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../../resources/img/pc-bg-05.jpg);
+  background-size: cover;
+}
+
+
+.form_container h2 {
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+
+.form_container h2 span {
+  color: aliceblue;
+  padding: 1px 3px;
+  background-color: red;
+}
+
+.form_container form {
+  padding: 18px 15px;
+  margin: 5px auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+input,
+textarea {
+box-sizing: border-box;
+border: none;
+border-bottom: 1px solid rgb(122, 122, 122);
+padding: 0.8em 0em;
+background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+color: rgb(112, 112, 112);
+}
+
+.form_container span {
+  color: rgb(0, 0, 0);
+  margin-left: 0;
+}
+
+.form_container a {
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  font-size: 12px;
+  text-decoration: underline;
+  transition: 200ms;
+}
+
+.form_container a:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  color: rgb(83, 83, 83);
+}
+
+.rowData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  margin: 5px auto;
+  color: #ffffff;
+  max-width: 250px;
+  background-color: #ff3e4f;
+  border: 1px solid #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}

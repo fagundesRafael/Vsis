@@ -1,0 +1,72 @@
+.novo_inquerito_container {
+  text-align: center;
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../../resources/img/pc-bg-09.jpg);
+  background-size: cover;
+}
+
+.form_container h2 {
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+.form_container h2 span {
+  color: aliceblue;
+  padding: 1px 3px;
+  background-color: red;
+}
+
+.form_container form {
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid rgb(122, 122, 122);
+  padding: 0.8em 0em;
+  background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgb(112, 112, 112);
+}
+
+.form_container span {
+  color: rgb(255, 255, 255);
+  margin-left: 0;
+}
+
+.special_span {
+  font-size: 10px;
+}
+
+select {
+  color: rgb(0, 0, 0);
+  margin-left: 0;
+  background: rgb(177, 177, 177);
+  border-radius: 3px;
+  height: 20px;
+  margin-top: 1px;
+}
+
+.rowData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  font-size: 15px;
+  margin: 5px auto;
+  color: #ffffff;
+  max-width: 500px;
+  background-color: #ff3e4f;
+  border: 1px solid #f5c6cb;
+  padding: 5px;
+  border-radius: 5px;
+}
