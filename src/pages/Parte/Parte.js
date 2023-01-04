@@ -10,7 +10,6 @@ import { useAuthValue } from "../../contexts/AuthContext";
 import { useInsertDocument } from "../../hooks/useInsertDocument";
 import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useNavigate } from "react-router-dom";
-// import FetchLocation from "./FetchLocation";
 
 const Parte = () => {
   const [name, setName] = useState("");

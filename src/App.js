@@ -20,6 +20,7 @@ import Partes from "./pages/Parte/Partes";
 import PartesEdit from "./pages/Parte/PartesEdit";
 import Inqueritos from "./pages/IPLs/Inqueritos";
 import NovoInquerito from "./pages/IPLs/NovoInquerito";
+import IPLSearch from "./pages/IPLs/IPLSearch";
 
 // components
 import Navbar from "./components/bars/Navbar";
@@ -70,6 +71,8 @@ function App() {
             <Route path="/partes/:id" element={user ? <PartesEdit/> : <Navigate to='/login'/>} />
             <Route path="/inqueritos" element={user ? <Inqueritos/> : <Navigate to='/login'/>} />
             <Route path="/novoinquerito" element={user ? <NovoInquerito/> : <Navigate to='/login'/>} />
+            <Route path="/inqueritos/search" element={ <IPLSearch/>} />
+            {/* <Route path="/inqueritos/:id" element={ user ? <IPLEdit/> : <Navigate to='/login'/>} /> */}
             <Route path="/" element={<Início />} />
             <Route path="/" element={<Início />} />
             <Route path="/" element={<Início />} />

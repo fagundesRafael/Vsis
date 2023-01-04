@@ -1,22 +1,13 @@
 import styles from "./PartesDashboard.module.css";
 
 import { Link } from "react-router-dom";
-
-// import { useAuthValue } from "../../contexts/AuthContext";
-// import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useDeleteDocument } from "../../hooks/useDeleteDocument";
 
 import * as RiIcons from "react-icons/ri";
 import * as MdIcons from "react-icons/md";
 
 const PartesDashboard = ({ parte }) => {
-  // const { user } = useAuthValue();
-  // const uid = user.id;
-
-  // const { document: partes } = useFetchDocuments("partes", null, uid);
-
   const { deleteDocument } = useDeleteDocument("partes");
-
 
   return (
     <div className={styles.main_square}>
