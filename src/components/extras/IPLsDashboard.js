@@ -53,7 +53,7 @@ const IPLsDashboard = ({ IPL }) => {
         <p>Seção atual: {IPL.sectional}</p>
       </div>
       <div>
-        <Link to={`/IPLs/${IPL.id}`} className={styles.edit_button}>
+        <Link to={`/inqueritos/${IPL.id}`} className={styles.edit_button}>
           <RiIcons.RiEdit2Line /> Editar
         </Link>
         <button
