@@ -22,6 +22,8 @@ import Inqueritos from "./pages/IPLs/Inqueritos";
 import NovoInquerito from "./pages/IPLs/NovoInquerito";
 import IPLSearch from "./pages/IPLs/IPLSearch";
 import IPLEdit from "./pages/IPLs/IPLEdit";
+import Circunstanciados from './pages/TCs/Circunstanciados'
+import NovoCircunstanciado from "./pages/TCs/NovoCircunstanciado";
 
 // components
 import Navbar from "./components/bars/Navbar";
@@ -72,9 +74,10 @@ function App() {
             <Route path="/partes/:id" element={user ? <PartesEdit/> : <Navigate to='/login'/>} />
             <Route path="/inqueritos" element={user ? <Inqueritos/> : <Navigate to='/login'/>} />
             <Route path="/novoinquerito" element={user ? <NovoInquerito/> : <Navigate to='/login'/>} />
+            <Route path="/novocircunstanciado" element={user ? <NovoCircunstanciado/> : <Navigate to='/login'/>} />
             <Route path="/inqueritos/search" element={ <IPLSearch/>} />
             <Route path="/inqueritos/:id" element={ user ? <IPLEdit/> : <Navigate to='/login'/>} />
-            <Route path="/" element={<Início />} />
+            <Route path="/circunstanciados" element={ user ? <Circunstanciados/> : <Navigate to='/login'/> } />
             <Route path="/" element={<Início />} />
             <Route path="/" element={<Início />} />
             <Route path="/" element={<Início />} />

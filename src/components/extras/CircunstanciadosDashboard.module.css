@@ -1,0 +1,95 @@
+body {
+    background-image: url(../../resources/img/pc-bg-12.jpg);
+    background-size: cover;
+    background-position: fixed;
+  }
+  
+  .main_square {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 80vw;
+    background-color: rgba(000, 000, 000, 0.6);
+    padding: 6px;
+  }
+  
+  h6 {
+    color: #fff;
+    margin-bottom: 1px;
+  }
+  
+  p {
+    font-size: 10px;
+    color: aliceblue;
+    margin-bottom: 1px;
+  }
+  
+  .number_tree {
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 100px;
+    height: 45px;
+  }
+  
+  .partes {
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 250px;
+    height: 45px;
+  }
+  
+  .crime_type {
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 200px;
+    height: 45px;
+  }
+  
+  .data {
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 200px;
+    height: 45px;
+  }
+  
+  .status {
+    border-top: 1px solid rgb(209, 209, 209);
+    width: 100px;
+    height: 45px;
+  }
+  
+  .status span {
+    padding: 0 2px;
+    background-color: red;
+  }
+  
+  .cota {
+    padding: 0 2px;
+    color: yellow;
+  }
+  
+  .edit_button,
+  .delete_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .edit_button {
+    color: rgb(0, 182, 55);
+  }
+  
+  .edit_button:hover {
+    color: rgb(0, 110, 33);
+  }
+  
+  .delete_button {
+    color: rgb(255, 25, 25);
+    background: none;
+    border: none;
+    transition: 250ms;
+  }
+  
+  .delete_button:hover {
+    color: rgb(185, 0, 0);
+  }
+  

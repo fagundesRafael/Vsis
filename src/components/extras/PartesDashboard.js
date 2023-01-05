@@ -34,6 +34,7 @@ const PartesDashboard = ({ parte }) => {
         <p>{parte.phoneNumber}</p>
       </div>
       <div className={styles.address}>
+        <h6>Endereço:</h6>
         <p>{parte.address}</p>
       </div>
       <div>

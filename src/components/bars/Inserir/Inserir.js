@@ -22,7 +22,7 @@ const Inserir = () => {
         <div className={styles.items_container}>
           <Link to='/inserir/parte'><span><BsIcons.BsPersonPlus/></span>PARTE</Link>
           <Link to='/novoinquerito'><span><SlIcons.SlDoc/></span>INQUÉRITO</Link>
-          <Link to='#'><span><SlIcons.SlDoc/></span>T.C.</Link>
+          <Link to='/novocircunstanciado'><span><SlIcons.SlDoc/></span>T.C.</Link>
           <Link to='#'><span><FaIcons.FaChild/></span>PAAI/AAI</Link>
           <Link to='#'><span><HiIcons.HiOutlineDocumentText/></span>OFÍCIO</Link>
           <Link to='#'><span><RiIcons.RiPoliceCarFill/></span>O.M.</Link>

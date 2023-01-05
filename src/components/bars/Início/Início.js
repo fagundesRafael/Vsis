@@ -22,7 +22,7 @@ const Início = () => {
       </div>
       <div className={styles.botton_container}>
         <Link to='/inqueritos'>INQUÉRITOS</Link>
-        <Link>CIRCUNSTANCIADOS</Link>
+        <Link to='/circunstanciados' >CIRCUNSTANCIADOS</Link>
         <Link>PAAIS</Link>
         <Link>OFÍCIOS</Link>
         <Link>ORDENS DE MISSÃO</Link>

@@ -1,4 +1,4 @@
-import styles from "./NovoInquerito.module.css";
+import styles from "./NovoCircunstanciado.module.css";
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -12,10 +12,10 @@ import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import PartesList from "../../components/extras/PartesList";
 import InputMask from "react-input-mask";
 
-const NovoInquerito = () => {
-  const { insertDocument, response } = useInsertDocument("IPLs");
+const NovoCircunstanciado = () => {
+  const { insertDocument, response } = useInsertDocument("TCs");
   const { documents: partes } = useFetchDocuments("partes");
-  const { documents: IPLs } = useFetchDocuments("IPLs");
+  const { documents: TCs } = useFetchDocuments("TCs");
 
   const [selectedVictim, setSelectedVictim] = useState("");
   const [selectedDefendant, setSelectedDefendant] = useState("");
@@ -30,13 +30,10 @@ const NovoInquerito = () => {
   const [datePrison, setDatePrison] = useState("");
   const [addressFact, setAddressFact] = useState("");
   const [selectedState, setSelectedState] = useState("RO");
-  const [selectedCity, setSelectedCity] = useState("MACHADINHO D OESTE");
+  const [selectedCity, setSelectedCity] = useState("MACHADINHO D'OESTE");
   const [crimeType, setCrimeType] = useState("");
   const [crimeKind, setCrimeKind] = useState("");
   const [article, setArticle] = useState("");
-  const [ordinance, setOrdinance] = useState("");
-  const [conducted, setConducted] = useState("");
-  const [infos, setInfos] = useState("");
   const [clerk, setClerk] = useState("");
   const [chief, setChief] = useState("");
   const [sectional, setSectional] = useState("");
@@ -47,13 +44,13 @@ const NovoInquerito = () => {
 
   const navigate = useNavigate();
 
-  async function chekIPL() {
-    var checkIplNumber = await IPLs.find(
-      (IPL) => IPL.inquerito.numero === number
+  async function chekTC() {
+    var checkTCNumber = await TCs.find(
+      (TC) => TC.circunstanciado.numero === number
     );
-    if (checkIplNumber) {
+    if (checkTCNumber) {
       setError(
-        `Número de IPL ${number} já existente no banco de dados.\nPor favor informe um número novo.`
+        `Número de TC ${number} já existente no banco de dados.\nPor favor informe um número novo.`
       );
     } else {
       setError("");
@@ -61,14 +58,14 @@ const NovoInquerito = () => {
   }
 
   useEffect(() => {
-    chekIPL();
+    chekTC();
   }, [number]);
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     insertDocument({
-      inquerito: { numero: number, ocorrencia: ocurrencyNumber, MP: ministri },
+      circunstanciado: { numero: number, ocorrencia: ocurrencyNumber, MP: ministri },
       informacoes: {
         portaria: dateCreate,
         data_fato: dateFact,
@@ -81,15 +78,12 @@ const NovoInquerito = () => {
         estado: selectedState,
       },
       tipo: { categoria: crimeKind, artigo: article, classe: crimeType },
-      ordinance,
-      status: conducted,
       partes: { vitimas: selectedVictim, suspeitos: selectedDefendant },
       team: { escrivao: clerk, delegado: chief },
       sectional,
-      infos,
     });
 
-    navigate("/inqueritos");
+    navigate("/circunstanciados");
   }
 
   const cancel = () => {
@@ -97,19 +91,19 @@ const NovoInquerito = () => {
   };
 
   return (
-    <div className={styles.novo_inquerito_container}>
+    <div className={styles.novo_circunstanciado_container}>
       <div className={styles.form_container}>
         <h2>
-          Insira os dados pertinentes ao <span>Inquérito:</span>
+          Cadastrar novo <span>Termo Circunstanciado:</span>
         </h2>
         {error && <p className={styles.error}>{error}</p>}
         <form onSubmit={handleSubmit}>
           <div className={styles.rowData}>
             <label>
-              <span>Número do inquérito:</span>
+              <span>Número do TC:</span>
               <InputMask
                 mask="999/9999"
-                placeholder="Número do Inquérito e ano:"
+                placeholder="Número do TC e ano:"
                 required
                 onChange={(e) => setNumber(e.target.value)}
                 value={number}
@@ -247,46 +241,6 @@ const NovoInquerito = () => {
               />
             </label>
           </div>
-          <div className={styles.rowData}>
-            <label>
-              <span>Procedimento:</span>
-              <select
-                value={ordinance}
-                onChange={(e) => setOrdinance(e.target.value)}
-                required
-              >
-                <option value=""></option>
-                <option value="Portaria">Portaria</option>
-                <option value="Flagrante">Flagrante</option>
-                <option value="Outros">Outros</option>
-              </select>
-            </label>
-            <label>
-              <span>Conduzido:</span>
-              <select
-                value={conducted}
-                onChange={(e) => setConducted(e.target.value)}
-                required
-              >
-                <option value=""></option>
-                <option value="SOLTO">- SOLTO -</option>
-                <option value="PRESO">- PRESO -</option>
-              </select>
-            </label>
-            <label>
-              <span>Prioridade:</span>
-              <select
-                value={infos}
-                onChange={(e) => setInfos(e.target.value)}
-                required
-              >
-                <option value=""></option>
-                <option value="NORMAL">NORMAL</option>
-                <option value="URGENTE">URGENTE</option>
-                <option value="COTA">COTA</option>
-              </select>
-            </label>
-          </div>
           <div>
             <label>
               <span>Vítima(s):</span>
@@ -386,4 +340,4 @@ const NovoInquerito = () => {
   );
 };
 
-export default NovoInquerito;
+export default NovoCircunstanciado;
