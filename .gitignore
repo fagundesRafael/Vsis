@@ -11,6 +11,9 @@
 # production
 /build
 
+# personal infos
+token.txt
+
 # misc
 .DS_Store
 .env.local
