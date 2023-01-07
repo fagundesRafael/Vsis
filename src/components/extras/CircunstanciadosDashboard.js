@@ -44,7 +44,7 @@ const CircunstanciadosDashboard = ({ TC }) => {
         <p>{TC.sectional}</p>
       </div>
       <div>
-        <Link to={`/inqueritos/${TC.id}`} className={styles.edit_button}>
+        <Link to={`/circunstanciados/${TC.id}`} className={styles.edit_button}>
           <RiIcons.RiEdit2Line /> Editar
         </Link>
         <button

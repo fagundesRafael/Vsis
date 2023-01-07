@@ -24,6 +24,8 @@ import IPLSearch from "./pages/IPLs/IPLSearch";
 import IPLEdit from "./pages/IPLs/IPLEdit";
 import Circunstanciados from './pages/TCs/Circunstanciados'
 import NovoCircunstanciado from "./pages/TCs/NovoCircunstanciado";
+import CircunstanciadosEdit from "./components/extras/CircunstanciadosEdit";
+import CircunstanciadosSearch from "./components/extras/CircunstanciadosSearch";
 
 // components
 import Navbar from "./components/bars/Navbar";
@@ -74,10 +76,12 @@ function App() {
             <Route path="/partes/:id" element={user ? <PartesEdit/> : <Navigate to='/login'/>} />
             <Route path="/inqueritos" element={user ? <Inqueritos/> : <Navigate to='/login'/>} />
             <Route path="/novoinquerito" element={user ? <NovoInquerito/> : <Navigate to='/login'/>} />
-            <Route path="/novocircunstanciado" element={user ? <NovoCircunstanciado/> : <Navigate to='/login'/>} />
             <Route path="/inqueritos/search" element={ <IPLSearch/>} />
             <Route path="/inqueritos/:id" element={ user ? <IPLEdit/> : <Navigate to='/login'/>} />
             <Route path="/circunstanciados" element={ user ? <Circunstanciados/> : <Navigate to='/login'/> } />
+            <Route path="/novocircunstanciado" element={user ? <NovoCircunstanciado/> : <Navigate to='/login'/>} />
+            <Route path="/circunstanciados/search" element={user ? <CircunstanciadosSearch/> : <Navigate to='/login'/>} />
+            <Route path="/circunstanciados/:id" element={ user ? <CircunstanciadosEdit/> : <Navigate to='/login'/>} />
             <Route path="/" element={<Início />} />
             <Route path="/" element={<Início />} />
             <Route path="/" element={<Início />} />
